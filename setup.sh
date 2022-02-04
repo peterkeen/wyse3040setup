@@ -10,7 +10,7 @@ EOF
 
 apk update
 
-apk install docker tailscale
+apk add docker tailscale
 
 rc-service docker start
 rc-update add docker
