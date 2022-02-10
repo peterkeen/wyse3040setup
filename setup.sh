@@ -18,6 +18,8 @@ rc-update add docker
 rc-service tailscale start
 rc-update add tailscale
 
+echo "sleeping 5 seconds for tailscaled to start up"
+sleep 5
 
 tailscale up --advertise-tags tag:server,tag:zwave
 
